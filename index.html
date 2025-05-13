@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bease64</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px; /* زيادة الهوامش الداخلية للمربع */
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px; /* زيادة عرض المربع */
+      text-align: center;
+    }
+
+    .select-container {
+      margin-bottom: 15px;
+    }
+
+    #text, #result {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    #text:focus, #result:focus {
+      border-color: #65dfc9; /* تغيير لون الحدود عند التركيز */
+    }
+
+    #result {
+      resize: none;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <strong>Hello Bro</strong>
+    <div class="select-container">
+      <select id="select">
+        <option value="encode">Encoding</option>
+        <option value="decode">Decoding</option>
+      </select>
+    </div>
+    <textarea id="text">Enter text</textarea>
+    <textarea id="result" readonly>The result</textarea>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
+
